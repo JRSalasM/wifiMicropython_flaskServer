@@ -1,0 +1,88 @@
+:root {
+  color: white;
+  font-family: sans-serif;
+  font-size: 36px;
+}
+
+body {
+  background-color: black;
+}
+
+.espacio5px {
+  padding: 5px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor-vertical {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 64px auto 64px auto;
+  text-align: center;
+  font-size: 72px;
+}
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.boton {
+  color: white;
+  font-size: 40px;
+  padding: 36px 24px;
+  border-radius: 10px;
+}
+
+.encendido {
+  background-color: red;
+}
+
+.apagado {
+  background-color: gray;
+}
+
+input {
+  font-size: 45px;
+  padding: 20px;
+}
+
+.texto {
+  width: 100%;
+  margin: auto;
+  border: 1px solid gray;
+  border-radius: 6px;
+  box-shadow: 1px 1px 10px 1px white;
+}
+
+.invalido {
+  border: 1px solid red;
+  box-shadow: 1px 1px 10px 1px red;
+}
+
+label {
+  color:white;
+  text-align: center;
+}
+
+footer {
+  color:white;
+  text-align: center;
+  padding: 40px;
+  font-family: serif;
+}

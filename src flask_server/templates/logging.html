@@ -1,0 +1,22 @@
+{% extends 'basica.html' %}
+
+{% block head %}
+<title>Logging</title>
+{% endblock %}
+
+{% block body %}
+<h1>Panel de control del ESP8266</h1>
+<br>
+<h3>Ingresa tus datos para continuar</h3>
+<div class="contenedor-vertical">
+  <form class="ingreso" action="/" method="post">
+    <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+    <div class="espacio5px"></div>
+    <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña">
+    <div class="espacio5px"></div>
+    <div class="espacio5px"></div>
+    <input type="submit" value="Ingresar">
+  </form>
+</div>
+
+{% endblock %}

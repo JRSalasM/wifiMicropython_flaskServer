@@ -1,0 +1,44 @@
+{% extends 'basica.html' %}
+
+{% block head %}
+<title>Panel de control</title>
+{% endblock %}
+
+{% block body %}
+<h1>Panel de Control</h1>
+<h3>Controlando el ESP8266</h3>
+<div class="contenedor">
+  <a href="/{{usuario}}/off">
+    <div class="boton apagado">
+      Apagar LED
+    </div>
+  </a>
+  <a href="/{{usuario}}/on">
+    <div class="boton encendido">
+      Encender LED
+    </div>
+  </a>
+</div>
+<div class="espacio5px"></div>
+<div class="espacio5px"></div>
+<div class="contenedor-vertical">
+  <form class="" action="/{{usuario}}/texto" method="post">
+    <input class="texto" type="text" name="texto16char" id="texto16char" placeholder="Máximo 32 caracteres">
+    <div class="espacio5px"></div>
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+
+<script type="text/python">
+  from browser import document, bind, alert
+
+
+  @bind(texto := document["texto16char"], "change")
+  def mostrar(e):
+    if len(texto.value) > 32:
+      alert("Envía máximo 32 caracteres")
+    else:
+      texto.Class = 'texto'
+</script>
+
+{% endblock %}

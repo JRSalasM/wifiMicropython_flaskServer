@@ -1,9 +1,0 @@
-https://forum.micropython.org/viewtopic.php?t=2858
-
-https://github.com/gsampallo/micropython_examples/blob/master/lcd/demo_lcd.py
-
-https://github.com/gsampallo/micropython_examples/commit/45fed4d7113173369fe6db0dc499b8a19e856178
-
-https://electrocrea.com/blogs/tutoriales/18193399-modulo-serial-i2c-para-display-lcd
-
-https://www.youtube.com/watch?v=xVC0X_PE_XE

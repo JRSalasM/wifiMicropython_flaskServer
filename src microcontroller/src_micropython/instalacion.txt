@@ -1,0 +1,30 @@
+ESP8266
+
+# Revisar el puerto
+
+ls /dev/cu.* 
+
+# Después de descargar esptool con pip3
+
+esptool.py --port SERIAL_PORT erase_flash
+
+macOS : /dev/cu.usbserial-1410
+ubuntu : /dev/ttyUSB0
+windows : COM5
+
+#
+
+esptool.py --port SERIAL_PORT --baud 460800 write_flash --flash_size=detect 0 FIRMWARE.BIN
+	
+esptool.py --port /dev/cu.usbserial-1410 --baud 460800 write_flash --flash_size=detect 0 esp8266-20191220-v1.12.bin
+
+
+# visualizar una terminal de comandos de MicroPython
+
+screen /dev/ttyUSB0 115200 
+
+# cargarle un archivo con un código de Python
+								// programa que yo hice llamado rutina.py	
+ampy --port /dev/ttyUSB0 put venv/rutina.py /main.py
+
+Salir de screen: Ctrl + A, k
